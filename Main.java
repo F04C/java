@@ -50,7 +50,26 @@ public class Main {
 
 
 //        CONSTANTS
-        final float PI = 3.14F;
+//        final float PI = 3.14F;
+
+//        IMPLICIT CASTING
+          double x = 1.1;
+//          double y = x + 2;
+          int y = (int)x + 2;
+        System.out.println(y);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
