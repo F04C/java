@@ -3,6 +3,7 @@ package com.tutorial;
 //import java.awt.*;
 //import java.util.Date;
 
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 public class Main {
@@ -53,10 +54,14 @@ public class Main {
 //        final float PI = 3.14F;
 
 //        IMPLICIT CASTING
-          double x = 1.1;
-//          double y = x + 2;
-          int y = (int)x + 2;
-        System.out.println(y);
+//          double x = 1.1;
+////          double y = x + 2;
+//          int y = (int)x + 2;
+
+//        METHOD CHAINING
+//        String result = NumberFormat.getPercentInstance().format(.1);
+
+//        System.out.println(result);
 
 
 
