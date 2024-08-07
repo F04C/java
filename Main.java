@@ -79,7 +79,7 @@ public class Main {
         System.out.print("Principal Amount: ");
         double principalAmount = scanner.nextDouble();
 
-        System.out.print("Annual Interest Rate (as a percentage): ");
+        System.out.print("Annual Interest Rate: ");
         double annualInterestRate = scanner.nextDouble();
 
         System.out.print("Period (Years): ");
@@ -91,7 +91,7 @@ public class Main {
 
         double mortgage = principalAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periodInMonths))
                 / (Math.pow(1 + monthlyInterestRate, periodInMonths) - 1);
-        System.out.print("mortgage :  " + mortgage);
+        System.out.print("mortgage :  " + Math.round((double)mortgage));
 
 
 
