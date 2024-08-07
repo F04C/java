@@ -74,26 +74,61 @@ public class Main {
 
 
 //       PROJECT MORTGAGE CALCULATOR
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Principal Amount: ");
+//        double principalAmount = scanner.nextDouble();
+//
+//        System.out.print("Annual Interest Rate: ");
+//        double annualInterestRate = scanner.nextDouble();
+//
+//        System.out.print("Period (Years): ");
+//        int periodInYears = scanner.nextInt();
+//
+//        double periodInMonths = periodInYears * 12;
+//
+//        double monthlyInterestRate = (annualInterestRate / 100) / 12;
+//
+//        double mortgage = principalAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periodInMonths))
+//                / (Math.pow(1 + monthlyInterestRate, periodInMonths) - 1);
+//        System.out.print("mortgage :  " + Math.round((double)mortgage));
+
+
+        System.out.print("Number");
         Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
 
-        System.out.print("Principal Amount: ");
-        double principalAmount = scanner.nextDouble();
-
-        System.out.print("Annual Interest Rate: ");
-        double annualInterestRate = scanner.nextDouble();
-
-        System.out.print("Period (Years): ");
-        int periodInYears = scanner.nextInt();
-
-        double periodInMonths = periodInYears * 12;
-
-        double monthlyInterestRate = (annualInterestRate / 100) / 12;
-
-        double mortgage = principalAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periodInMonths))
-                / (Math.pow(1 + monthlyInterestRate, periodInMonths) - 1);
-        System.out.print("mortgage :  " + Math.round((double)mortgage));
+        if (number%3!=0 || number%5!=0)
+        {
 
 
+
+            if (number%3==0)
+            {
+                System.out.print("Buzz");
+            }
+            else if (number%5==0)
+            {
+                System.out.print("Fizz");
+            }
+            else
+            {
+                System.out.print("FizzBuzz");
+
+            }
+        }
+        else
+        {
+            System.out.print(number);
+
+        }
+//
+//    IF DIVISIBLE BY 5 FIZZ
+//            DIV BY 3 BUZZ
+//            IF DIVISBLE BY BOTH 3 AND 5
+//            FIZZBUZZ
+//NOT DIV BY 5 AND 3
+//            PRINT THE NUMBER
 
 
 
