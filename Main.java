@@ -3,6 +3,8 @@ package com.tutorial;
 //import java.awt.*;
 //import java.util.Date;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //        TYPICAL HELLO WORLD
@@ -38,6 +40,13 @@ public class Main {
 //        String message2 = " world";
 //        System.out.println(message + message2);
 
+
+//        ARRAY
+          int[] numbers = new int[4];
+          numbers[0] = 1;
+
+
+        System.out.println(Arrays.toString(numbers));
 
 
     }
