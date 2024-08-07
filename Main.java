@@ -3,8 +3,9 @@ package com.tutorial;
 //import java.awt.*;
 //import java.util.Date;
 
-import java.text.NumberFormat;
-import java.util.Arrays;
+//import java.text.NumberFormat;
+//import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,6 +63,15 @@ public class Main {
 //        String result = NumberFormat.getPercentInstance().format(.1);
 
 //        System.out.println(result);
+
+
+//        GET USER INPUT
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        byte age = scanner.nextByte();
+        System.out.println("You are " + age);
+
 
 
 
