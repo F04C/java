@@ -66,11 +66,33 @@ public class Main {
 
 
 //        GET USER INPUT
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter your age: ");
+//        byte age = scanner.nextByte();
+//        System.out.println("You are " + age);
+
+
+//       PROJECT MORTGAGE CALCULATOR
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your age: ");
-        byte age = scanner.nextByte();
-        System.out.println("You are " + age);
+        System.out.print("Principal Amount: ");
+        double principalAmount = scanner.nextDouble();
+
+        System.out.print("Annual Interest Rate (as a percentage): ");
+        double annualInterestRate = scanner.nextDouble();
+
+        System.out.print("Period (Years): ");
+        int periodInYears = scanner.nextInt();
+
+        double periodInMonths = periodInYears * 12;
+
+        double monthlyInterestRate = (annualInterestRate / 100) / 12;
+
+        double mortgage = principalAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periodInMonths))
+                / (Math.pow(1 + monthlyInterestRate, periodInMonths) - 1);
+        System.out.print("mortgage :  " + mortgage);
+
 
 
 
