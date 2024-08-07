@@ -1,6 +1,6 @@
 package com.tutorial;
 
-import java.awt.*;
+//import java.awt.*;
 //import java.util.Date;
 
 public class Main {
@@ -25,12 +25,16 @@ public class Main {
 
 
 
-        Point point1 = new Point(1,1);
-        Point point2 = point1;
-        point1.x = 2;
+//        Point point1 = new Point(1,1);
+//        Point point2 = point1;
+//        point1.x = 2;
+//
+//        System.out.println(point2);
 
-        System.out.println(point2);
 
+        String message =  "Hello";
+        String message2 = " world";
+        System.out.println(message + message2);
     }
 
 
