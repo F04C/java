@@ -94,34 +94,45 @@ public class Main {
 //        System.out.print("mortgage :  " + Math.round((double)mortgage));
 
 
-        System.out.print("Number");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
 
-        if (number%3!=0 || number%5!=0)
-        {
+//        FizzBuzz  Exercise
+//        System.out.print("Number");
+//        Scanner scanner = new Scanner(System.in);
+//        int number = scanner.nextInt();
+//
+//        if (number%3!=0 || number%5!=0)
+//        {
+//
+//
+//
+//            if (number%3==0)
+//            {
+//                System.out.print("Buzz");
+//            }
+//            else if (number%5==0)
+//            {
+//                System.out.print("Fizz");
+//            }
+//            else
+//            {
+//                System.out.print("FizzBuzz");
+//
+//            }
+//        }
+//        else
+//        {
+//            System.out.print(number);
+//
+//        }
 
-
-
-            if (number%3==0)
-            {
-                System.out.print("Buzz");
-            }
-            else if (number%5==0)
-            {
-                System.out.print("Fizz");
-            }
-            else
-            {
-                System.out.print("FizzBuzz");
-
-            }
-        }
-        else
-        {
-            System.out.print(number);
-
-        }
+//        FOR EACH
+//        String[] names = {"Joe", "Ana", "Bob"};
+//
+//
+//        for (String name : names)
+//        {
+//            System.out.println(name);
+//        }
 //
 //    IF DIVISIBLE BY 5 FIZZ
 //            DIV BY 3 BUZZ
@@ -129,9 +140,6 @@ public class Main {
 //            FIZZBUZZ
 //NOT DIV BY 5 AND 3
 //            PRINT THE NUMBER
-
-
-
 
 
 
