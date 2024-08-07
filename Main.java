@@ -42,11 +42,15 @@ public class Main {
 
 
 //        ARRAY
-          int[] numbers = new int[4];
-          numbers[0] = 1;
+//          int[] numbers = new int[4];
+//          numbers[0] = 1;
+//
+//
+//        System.out.println(Arrays.toString(numbers));
 
 
-        System.out.println(Arrays.toString(numbers));
+//        CONSTANTS
+        final float PI = 3.14F;
 
 
     }
