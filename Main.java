@@ -146,6 +146,56 @@ public class Main {
 
 
 
+//      PROJECT MORTGAGE CALCULATOR
+        Scanner scanner = new Scanner(System.in);
+        double principalAmount;
+        double annualInterestRate;
+        int periodInYears;
+
+
+        do
+        {
+            System.out.print("Principal Amount (Between $1K and $1M): ");
+            principalAmount = scanner.nextDouble();
+            if (principalAmount < 1000 || principalAmount > 1000000)
+            {
+                System.out.print("Enter a value between $1000 and $1000000 only");
+            }
+        }
+        while (principalAmount < 1000 || principalAmount > 1000000);
+
+        do
+        {
+            System.out.print("Annual Interest Rate: ");
+            annualInterestRate = scanner.nextDouble();
+            if (annualInterestRate < 0 || annualInterestRate > 30)
+            {
+                System.out.print("Enter an interest between 0 and 30 only");
+            }
+        }
+        while(annualInterestRate < 0 || annualInterestRate > 30);
+
+        do
+        {
+            System.out.print("Period (Years): ");
+            periodInYears = scanner.nextInt();
+        }
+        while(periodInYears < 1 || periodInYears > 30);
+
+
+
+
+
+
+        double periodInMonths = periodInYears * 12;
+
+        double monthlyInterestRate = (annualInterestRate / 100) / 12;
+
+        double mortgage = principalAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periodInMonths))
+                / (Math.pow(1 + monthlyInterestRate, periodInMonths) - 1);
+        System.out.print("mortgage :  " + Math.round(mortgage));
+
+
 
 
 
