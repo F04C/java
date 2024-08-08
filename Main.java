@@ -94,7 +94,6 @@ public class Main {
 //        System.out.print("mortgage :  " + Math.round((double)mortgage));
 
 
-
 //        FizzBuzz  Exercise
 //        System.out.print("Number");
 //        Scanner scanner = new Scanner(System.in);
@@ -140,10 +139,6 @@ public class Main {
 //            FIZZBUZZ
 //NOT DIV BY 5 AND 3
 //            PRINT THE NUMBER
-
-
-
-
 
 
 //      PROJECT MORTGAGE CALCULATOR
@@ -192,15 +187,36 @@ public class Main {
 
 
         //Methods
-        greetUser("Darrel", "Israel");
-        greetUser("John", "Cena");
-        greetUser("Bob", "Cat");
+//        greetUser("Darrel", "Israel");
+//        greetUser("John", "Cena");
+//        greetUser("Bob", "Cat");
+//
+//    }
+//    public static void greetUser(String firstName, String lastName)
+//    {
+//        System.out.println("Hello " + firstName + " " + lastName);
+//    }
 
-    }
-    public static void greetUser(String firstName, String lastName)
+        String firstName = "Darrel";
+        String lastName = "Israel";
+        int age = 18;
+
+
+        String info = personalInfo(firstName, lastName, age);
+
+        System.out.print(info);
+        
+
+
+
+    } // End of Main
+
+
+    public static String personalInfo(
+            String firstName,
+            String lastName,
+            int age)
     {
-        System.out.println("Hello " + firstName + " " + lastName);
+        return "Hello, your name is " + firstName + " " + lastName + ". " + "Your age is " + age;
     }
-
-
 }
