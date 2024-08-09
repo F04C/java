@@ -197,26 +197,38 @@ public class Main {
 //        System.out.println("Hello " + firstName + " " + lastName);
 //    }
 
-        String firstName = "Darrel";
-        String lastName = "Israel";
-        int age = 18;
-
-
-        String info = personalInfo(firstName, lastName, age);
-
-        System.out.print(info);
+//        String firstName = "Darrel";
+//        String lastName = "Israel";
+//        int age = 18;
+//
+//
+//        String info = personalInfo(firstName, lastName, age);
+//
+//        System.out.print(info);
         
 
 
 
-    } // End of Main
+        var employee = new Employee();
+        employee.setBaseSalary(5000);
+        int base = employee.getBaseSalary()
+;//        employee.baseSalary = 50_000;
+        employee.hourlyRate = 20;
+        int wage = employee.calculateWage(10);
+
+        System.out.print(base);
 
 
-    public static String personalInfo(
-            String firstName,
-            String lastName,
-            int age)
-    {
-        return "Hello, your name is " + firstName + " " + lastName + ". " + "Your age is " + age;
-    }
-}
+    } // End of void Main
+
+
+//    public static String personalInfo(
+//            String firstName,
+//            String lastName,
+//            int age)
+//    {
+//        return "Hello, your name is " + firstName + " " + lastName + ". " + "Your age is " + age;
+//    }
+} // End of Class Main
+
+
