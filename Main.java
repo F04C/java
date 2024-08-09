@@ -209,14 +209,18 @@ public class Main {
 
 
 
-        var employee = new Employee();
-        employee.setBaseSalary(5000);
-        int base = employee.getBaseSalary()
+//        var employee = new Employee();
+//        employee.setBaseSalary(5000);
+//        int base = employee.getBaseSalary()
 ;//        employee.baseSalary = 50_000;
-        employee.hourlyRate = 20;
-        int wage = employee.calculateWage(10);
+//        employee.setHourlyRate(20);
+//        int wage = employee.calculateWage(10);
+//
+//        System.out.print(base);
 
-        System.out.print(base);
+
+        var browser = new Browser();
+        browser.navigate("Iloilo");
 
 
     } // End of void Main
