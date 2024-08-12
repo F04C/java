@@ -219,8 +219,8 @@ public class Main {
 //        System.out.print(base);
 
 
-        var browser = new Browser();
-        browser.navigate("Iloilo");
+//        var browser = new Browser();
+//        browser.navigate("Iloilo");
 
 
     } // End of void Main
